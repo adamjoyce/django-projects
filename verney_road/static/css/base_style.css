@@ -1,0 +1,165 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Lato, Arial;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+p {
+	font-size: 2rem;
+}
+
+footer {
+	background-color: #223e71;
+	color: #fff;
+	text-align: center;
+}
+
+footer a {
+	font-size: 1.1em;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+footer p {
+	font-size: 1em;
+}
+
+.navbar-default {
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 1.1em;
+}
+
+.navbar-default .navbar-brand {
+	color: #223e71;
+/*	padding-left: 30px;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+	border-top: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #223e71;
+    border-bottom: 3px solid #223e71;
+}
+
+.launch-hr {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.max-width {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header-banner {
+	min-height: 200px;
+	background-size: cover;
+}
+
+.dark {
+	background-color: #f0f0f0;
+}
+
+.row {
+	padding: 15px 0;
+}
+
+.content {
+	padding-top: 35px;
+	padding-bottom: 40px;
+}
+
+.content h1,
+.content h2 {
+	color: #223e71;
+}
+
+.content p {
+	padding-right: 15px;
+	color: #777;
+}
+
+.content img {
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 75px;
+	display: block;
+}
+
+.content a {
+	font-size: 2rem;
+}
+
+.content hr {
+	width: 400px;
+	margin-top: 40px;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#banner-image {
+	background-image: url("/static/images/birds_eye_verney_road_tint.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: #223e71;
+}
+
+#header-page1 {
+	background-image: url(images/musicBoxShardProg.jpg);
+	background-position: center 91%;
+}
+
+#header-page5 {
+	background-image: url(images/musicBoxShardProg.jpg);
+	background-position: center 91%;
+}
+
+#active-page {
+	color: #223e71;
+    border-bottom: 3px solid #223e71;
+}
+
+#launch-content {
+	padding-top: 12.5%;
+	text-align: center;
+	color: white;
+}
+
+/*@media (min-width: 768px) {
+	.navbar .collapse .nav .hidden-above-xs {
+    	display: none!important;
+    }
+}*/
+
+@media screen and (min-width: 1140px) {
+	#launch-content {
+		width: 740px;
+		margin: 0 auto;
+	}
+}

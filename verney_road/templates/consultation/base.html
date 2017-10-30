@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Verny Road - {% block title_block %}Masterplan{% endblock %}</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700"
+    rel="stylesheet">
+  </head>
+  <body {% block body_id_block %}{% endblock %}>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and menu bar toggle for mobile displays -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#bs-navbar-collapse-1"
+          aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+	    			<span class="icon-bar"></span>
+	    			<span class="icon-bar"></span>
+	    			<span class="icon-bar"></span>
+	  			</button>
+
+				  <a href="{% url 'index' %}" class="navbar-brand">
+            6-12 Verney Road
+          </a>
+			  </div>
+
+			  <!-- Collect the nav links, forms, and other content for
+        toggling -->
+			  <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+				  <ul class="nav navbar-nav uppercase">
+					  <li>
+              <a href="{% url 'who_are_we' %}"
+                {% block activate_link_0 %}{% endblock %}>Who Are We</a>
+            </li>
+					  <li><a href="#" {% block activate_link_1 %}{% endblock %}>
+              Project Information</a></li>
+					  <li><a href="#" {% block activate_link_2 %}{% endblock %}>
+              Latest News</a></li>
+				  </ul>
+
+				  <ul class="nav navbar-nav navbar-right">
+					  <li class="nav-divider"></li>
+					  <li><a href="#" {% block activate_link_4 %}{% endblock %}>
+              Downloads</a></li>
+					  <li><a href="#" {% block activate_link_5 %}{% endblock %}>
+              Contact Us</a></li>
+				  </ul>
+			  </div>
+		  </div>
+	  </nav>
+
+    {% block body_block %}
+    {% endblock %}
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}">
+    </script>
+
+    </script>
+  </body>
+</html>
