@@ -8,3 +8,6 @@ def who_are_we(request):
 
 def project_information(request):
     return render(request, 'consultation/project_information.html')
+
+def latest_news(request):
+    return render(request, 'consultation/latest_news.html')

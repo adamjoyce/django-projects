@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^who_are_we/$', views.who_are_we, name='who_are_we'),
     url(r'^project_information/$', views.project_information,
         name='project_information'),
+    url(r'^latest_news/$', views.latest_news, name='latest_news'),
     url(r'^admin/', admin.site.urls),
 ]

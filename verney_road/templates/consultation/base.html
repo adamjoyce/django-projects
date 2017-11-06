@@ -48,8 +48,11 @@
                 {% block activate_link_1 %}{% endblock %}>Project Information
               </a>
             </li>
-					  <li><a href="#" {% block activate_link_2 %}{% endblock %}>
-              Latest News</a></li>
+					  <li>
+              <a href="{% url 'latest_news' %}"
+                {% block activate_link_2 %}{% endblock %}>Latest News
+              </a>
+            </li>
 				  </ul>
 
 				  <ul class="nav navbar-nav navbar-right">
@@ -83,7 +86,8 @@
             Who Are We</a></div>
   				<div class="col-md-2"><a href="{% url 'project_information' %}">
             Project Information</a></div>
-  				<div class="col-md-2"><a href="#">Latest News</a></div>
+  				<div class="col-md-2"><a href="{% url 'latest_news' %}">
+            Latest News</a></div>
   				<div class="col-md-2"><a href="#">Downloads</a></div>
   				<div class="col-md-2"><a href="#">Contact Us</a></div>
   				<div class="col-md-1"></div>
