@@ -55,7 +55,7 @@ footer p {
 
 .navbar-default .navbar-nav>li>a:hover {
 	color: #223e71;
-    border-bottom: 3px solid #223e71;
+	border-bottom: 3px solid #223e71;
 }
 
 .launch-hr {
@@ -127,22 +127,22 @@ footer p {
 	background-image: url("/static/images/birds_eye_verney_road_tint.jpg");
 	background-size: cover;
 	background-position: center;
-	background-color: #223e71;
+	background-color: #777;
 }
 
 #header-page1 {
-	background-image: url(images/musicBoxShardProg.jpg);
+	background-image: url("/static/images/music_box_shard.jpg");
 	background-position: center 91%;
 }
 
 #header-page5 {
-	background-image: url(images/musicBoxShardProg.jpg);
+	background-image: url("/static/images/music_box_shard.jpg");
 	background-position: center 91%;
 }
 
 #active-page {
 	color: #223e71;
-    border-bottom: 3px solid #223e71;
+  border-bottom: 3px solid #223e71;
 }
 
 #launch-content {
@@ -151,15 +151,19 @@ footer p {
 	color: white;
 }
 
-/*@media (min-width: 768px) {
-	.navbar .collapse .nav .hidden-above-xs {
-    	display: none!important;
-    }
-}*/
-
 @media screen and (min-width: 1140px) {
 	#launch-content {
 		width: 740px;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-default .navbar-nav>li>a:hover {
+	  border-bottom: 3px solid #fff;
+	}
+
+	#active-page {
+	  border-bottom: 3px solid #fff;
 	}
 }

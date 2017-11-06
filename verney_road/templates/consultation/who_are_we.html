@@ -9,6 +9,75 @@ Who Are We
 id="active-page"
 {% endblock %}
 
+{% block header_image %}
+id="header-page1"
+{% endblock %}
+
 {% block body_block %}
-<p>HIYA THIS IS THE WHO ARE WE PAGE</p>
+<!-- The Owners -->
+<div class="container-fluid">
+  <div class="container content">
+    <h1>The Owners</h1>
+
+    <!-- Argon Capital -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Argon Capital</h2>
+        <p>Bacon ipsum dolor amet meatball kielbasa drumstick prosciutto
+           fatback short loin. Ball tip turkey shoulder filet mignon pork
+           chop shank brisket landjaeger leberkas. Pork belly chicken sirloin
+           pastrami shankle. Landjaeger tongue jowl pancetta. Kevin landjaeger
+           flank pastrami brisket.</p>
+        <a href="https://argoncap.co.uk/" target="_blank">www.argoncap.co.uk</a>
+      </div>
+      <div class="col-md-6" style="height: 100%">
+        <img src="{% static 'images/argon_capital_logo.png' %}">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- CB Acquisition LDN Limited -->
+    <div class="row">
+      <div class="col-md-6 center-padding-vertical">
+        <h2>CB Acquistions LDN</h2>
+        <p>Bacon ipsum dolor amet meatball kielbasa drumstick prosciutto
+          fatback short loin. Ball tip turkey shoulder filet mignon pork
+          chop shank brisket landjaeger leberkas. Pork belly chicken sirloin
+          pastrami shankle. Landjaeger tongue jowl pancetta. Kevin landjaeger
+          flank pastrami brisket.</p>
+        <a href="https://www.centerbridge.com/" target="_blank">
+          www.centerbridge.com</a>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'images/centerbridge_logo.png' %}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Architects -->
+<div class="container-fluid dark">
+  <div class="container content">
+    <h1>The Architects</h1>
+
+    <!-- Spparc Studio -->
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Spparc Studio</h2>
+        <p>Bacon ipsum dolor amet meatball kielbasa drumstick prosciutto
+          fatback short loin. Ball tip turkey shoulder filet mignon pork
+          chop shank brisket landjaeger leberkas. Pork belly chicken sirloin
+          pastrami shankle. Landjaeger tongue jowl pancetta. Kevin landjaeger
+          flank pastrami brisket.</p>
+        <a href="http://www.spparcstudio.com/" target="_blank">
+          www.spparcstudio.com</a>
+      </div>
+      <div class="col-md-6" style="height: 100%">
+        <img src="{% static 'images/spparc_logo.png' %}">
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

@@ -43,8 +43,11 @@
               <a href="{% url 'who_are_we' %}"
                 {% block activate_link_0 %}{% endblock %}>Who Are We</a>
             </li>
-					  <li><a href="#" {% block activate_link_1 %}{% endblock %}>
-              Project Information</a></li>
+					  <li>
+              <a href="{% url 'project_information' %}"
+                {% block activate_link_1 %}{% endblock %}>Project Information
+              </a>
+            </li>
 					  <li><a href="#" {% block activate_link_2 %}{% endblock %}>
               Latest News</a></li>
 				  </ul>
@@ -60,13 +63,46 @@
 		  </div>
 	  </nav>
 
+    {% block header_banner %}
+    <!-- Header Banner -->
+  	<section class="conatainer-fluid header-banner"
+    {% block header_image %}{% endblock %}></section>
+    {% endblock header_banner %}
+
     {% block body_block %}
     {% endblock %}
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}">
-    </script>
+    {% block footer_block %}
+    <!-- Footer -->
+  	<footer class="container-fluid">
+  		<div class="container">
+  			<h3 class="text-center">Useful Links</h3>
+  			<div class="row">
+  				<div class="col-md-1"></div>
+  				<div class="col-md-2"><a href="{% url 'who_are_we' %}">
+            Who Are We</a></div>
+  				<div class="col-md-2"><a href="{% url 'project_information' %}">
+            Project Information</a></div>
+  				<div class="col-md-2"><a href="#">Latest News</a></div>
+  				<div class="col-md-2"><a href="#">Downloads</a></div>
+  				<div class="col-md-2"><a href="#">Contact Us</a></div>
+  				<div class="col-md-1"></div>
+  			</div>
+  		</div>
 
+  		<div class="row">
+  			<p>© 2017 Verney Road Masterplan. All rights reserved.</p>
+  		</div>
+  	</footer>
+    {% endblock %}
+
+    <!-- Scripts -->
+    <!-- Latest compiled and minified JQuery -->
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}">
     </script>
   </body>
 </html>

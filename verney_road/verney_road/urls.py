@@ -21,5 +21,7 @@ from consultation import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^who_are_we/$', views.who_are_we, name='who_are_we'),
+    url(r'^project_information/$', views.project_information,
+        name='project_information'),
     url(r'^admin/', admin.site.urls),
 ]
